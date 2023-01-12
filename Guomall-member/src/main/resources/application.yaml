@@ -2,7 +2,7 @@ spring:
   datasource:
     username: root
     password: guomua
-    url: jdbc:mysql://106.15.192.98:3306/Guomall_ums?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    url: jdbc:mysql://106.15.192.98:3306/Guomall_pms?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
     driver-class-name: com.mysql.cj.jdbc.Driver
 
   cloud:
@@ -11,11 +11,11 @@ spring:
         server-addr: 127.0.0.1:8848
 
   application:
-    name: Guomall-member
+    name: Guomall-product
 mybatis-plus:
   mapper-locations: classpath*:/mapper/**/*.xml
   global-config:
     db-config:
       id-type: auto #自增主键
 server:
-  port: 11000
+  port: 8000

@@ -1,0 +1,20 @@
+# \u6539\u540D\u5B57\uFF0C\u5BF9\u5E94nacos\u91CC\u7684\u914D\u7F6E\u6587\u4EF6\u540D
+spring:
+  application:
+    name: Guomall-coupon
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        namespace: 82d5256a-1a11-4d17-aa3b-0824c672ce0b
+        ext-config:
+          - data-id: datasource.yaml
+            group: dev
+            refresh: true
+          - data-id: mybatis.yaml
+            group: dev
+            refresh: true
+          - data-id: others.yaml
+            group: dev
+            refresh: true
+        group: dev
